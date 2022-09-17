@@ -1,0 +1,30 @@
+{
+  // https://www.tslang.cn/docs/handbook/compiler-options.html
+  "compilerOptions": { 
+    "allowJs": true,
+    "target": "ESNext",// 指定ECMAScript目标版本 "ES3"（默认）
+    "useDefineForClassFields": true,
+    "module": "ESNext", // 指定生成哪个模块系统代码：
+    "moduleResolution": "Node",
+    "strict": true, // 启用所有严格类型检查选项。
+    "jsx": "preserve", // 在 .tsx文件里支持JSX： "React"或 "Preserve"。查看 JSX。
+    "sourceMap": true, //生成相应的 .map文件。
+    "resolveJsonModule": true,
+    "isolatedModules": true, // 将每个文件作为单独的模块
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"], // 编译过程中需要引入的库文件的列表。
+    "skipLibCheck": true, // 忽略所有的声明文件（ *.d.ts）的类型检查。
+    "paths": { // 模块名到基于 baseUrl的路径映射的列表。
+      "@/*": ["./src/*"]
+    },
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  // 引用的工程，是一个对象的数组，指明要引用的工程：
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
+
+// - compilerOptions：ts项目编译时，遵守的一些规则，
+// - include：
+// - exclude：
+// - references：
+// - files：指定一个包含相对或绝对文件路径的列表
