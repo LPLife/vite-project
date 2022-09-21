@@ -8,6 +8,8 @@
 </template>
 <style scoped lang="less">
 .footer {
+  width: 100vw;
+
   .tip {
     color: #fff;
     font-size: 20px;

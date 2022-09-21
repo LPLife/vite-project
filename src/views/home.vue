@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Footer from '@/components/Footer.vue';
+let a = 1;
 </script>
 
 <template>
@@ -16,6 +17,5 @@ import Footer from '@/components/Footer.vue';
   background: url(../assets/home/bg.png) no-repeat center;
   background-size: 100% 100%;
   min-height: 100vh;
-  width: 100vw;
 }
 </style>

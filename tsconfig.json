@@ -20,7 +20,8 @@
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   // 引用的工程，是一个对象的数组，指明要引用的工程：
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "exclude": ["./commitlint.config.js","./.eslintrc.js"]
 }
 
 // - compilerOptions：ts项目编译时，遵守的一些规则，

@@ -7,8 +7,16 @@ const loder_pxtovw = pxtovw({
   viewportWidth: 750,
   viewportUnit: 'vw'
 })
-// https://vitejs.dev/config/
+// https://vitejs.dev/config/ 
 export default defineConfig({
+  server: {
+    port: 8888
+  },
+  build: {
+    assetsDir: 'assets',
+    outDir: 'dist'
+  },
+  base: '/nft/',
   plugins: [vue()],
   css: {
     postcss: {
