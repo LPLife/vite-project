@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "ci": "git-cz",
+    "commit": "git-cz",
     "prepare": "husky install"
   },
   "dependencies": {
